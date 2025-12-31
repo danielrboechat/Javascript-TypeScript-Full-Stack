@@ -1,0 +1,2 @@
+// comente assim
+/* ou assim */
