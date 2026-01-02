@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 :root {
-  --primary-color: rgb(17, 86, 102);
-  --primary-color-darker: rgb(9, 48, 56);
+  --primary-color: rgb(62, 214, 207);
+  --primary-color-darker: rgb(38, 139, 134);
 }
 
 * {
@@ -14,16 +14,31 @@ body {
   padding: 0;
   background: var(--primary-color);
   font-family: 'Open sans', sans-serif;
-  font-size: 1.3em;
-  line-height: 1.5em;
+  font-size: 1.2em;
+  line-height: 1em;
 }
 
-.container {
-  max-width: 640px;
+h1{
+  text-align: center;
+}
+
+#container {
+  max-width: 600px;
   margin: 50px auto;
   background: #fff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
+  box-shadow: 3px 3px 2px rgba(38, 139, 134, 0.568);
+}
+
+#pai{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.filho{
+  padding: 0px 40px;
 }
 
 form input, form label, form button {
@@ -42,7 +57,7 @@ form input:focus {
   outline: 1px solid var(--primary-color);
 }
 
-form button {
+#button {
   border: none;
   background: var(--primary-color);
   color: #fff;
@@ -51,8 +66,14 @@ form button {
   height: 50px;
   cursor: pointer;
   margin-top: 30px;
+  border-radius: 10px;
 }
 
-form button:hover {
+#button:hover {
   background: var(--primary-color-darker);
 }
+
+.green{color: green;}
+.yellow{color: orange;}
+.red{color: red;}
+.darkred{color: darkred;}
