@@ -1,16 +1,16 @@
+const fullDate = document.querySelector('#full-date')
 const data = new Date()
 let dia = data.getDate()
+dia = zeroAEsquerda(dia)
+let diasem = data.getDay()
+diasem = calcDiaSem(diasem)
 let mes = data.getMonth()
+mes = calcMes(mes)
 const ano = data.getFullYear()
 let hora = data.getHours()
-let min = data.getMinutes()
-let diasem = data.getDay()
-const fullDate = document.querySelector('#full-date')
-diasem = calcDiaSem(diasem)
-dia = zeroAEsquerda(dia)
 hora = zeroAEsquerda(hora)
+let min = data.getMinutes()
 min = zeroAEsquerda(min)
-mes = calcMes(mes)
 fullDate.innerHTML = `${diasem}, ${dia} de ${mes} de ${ano} às ${hora}:${min}`
 
 function zeroAEsquerda(zero){
